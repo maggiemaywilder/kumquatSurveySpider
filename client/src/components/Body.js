@@ -21,8 +21,9 @@ const Body = () => {
                     </div>
                 </div>
             </Row>
+                <br />
+                <p><b>Directions:</b> Please circle the number that best reflects your answer for each question.</p>
             <Row className='justify-content-center mt-3'>
-                <p><b>Directions:</b> Please circle the number that best reflects your answer for each question.</p><br/>
                 <Form action='mailto:"tedawilder@gmail.com" method="post" enctype="text/plain"'>
                     <Form.Group controlId='demographics'>
                         <Form.Label>What is your gender and age?</Form.Label>
