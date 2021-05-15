@@ -2,10 +2,12 @@
   "name": "teedj-survey",
   "version": "1.0.0",
   "description": "An easy to use CLI for my brother to generate simple mobile friendly surveys to use with his graduate level psych research. Using node, mongoDB, and React",
+  "homepage": "https://maggiemaywilder.github.io/kumquatSurveySpider/",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d master -d build",
+    "deploy": "gh-pages -b master -d build",
+    "build": "cd client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "json-server --watch db.json --port 5000",
     "install": "cd client && npm install",
@@ -13,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maggiemaywilder/kumquatSurveySpider.git"
+    "url": "git+https://github.com/maggiemaywilder/kumquatSurveySpider.git/"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +23,6 @@
   "bugs": {
     "url": "https://github.com/maggiemaywilder/kumquatSurveySpider/issues"
   },
-  "homepage": "https://maggiemaywilder.github.io/kumquatSurveySpider",
   "dependencies": {
     "bootstrap": "^4.6.0",
     "gh-pages": "^3.1.0",
